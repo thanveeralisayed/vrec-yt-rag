@@ -5,9 +5,18 @@ const nextConfig: NextConfig = {
   experimental: {
     agentFeedback: true,
   },
+  allowedDevOrigins: ["192.168.0.160", "localhost"],
   cacheComponents: true,
   partialPrefetching: true,
   reactCompiler: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
+    ],
+  },
   turbopack: {
     rules: {
       "*.css": {
