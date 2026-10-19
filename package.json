@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db:migrate": "NODE_OPTIONS='--dns-result-order=ipv4first' drizzle-kit migrate",
+    "db:migrate": "drizzle-kit migrate",
     "db:generate": "drizzle-kit generate",
-    "db:push": "NODE_OPTIONS='--dns-result-order=ipv4first' drizzle-kit push",
-    "db:studio": "NODE_OPTIONS='--dns-result-order=ipv4first' drizzle-kit studio"
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.2.0",
